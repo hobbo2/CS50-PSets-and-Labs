@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name  = 'viewport' content = 'initial-scale =1, width = device-width'>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>GetJobs</title>
+        <script src = 'homepage.js'>
+            // TODO: Add code to check answers to questions
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Answer Correctly to Win an Amazon Gift Cards!</h1>
+        </div>
+        <div class="bg-primary p-2" style="--bs-bg-opacity: {.5};">
+            <div class="opacity-50">
+            <div class="container">
+                <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>
+                    Who was the first democratic president of South Africa?
+                </h3>
+                <form>
+                   <button id = 'correct'> Nelson Mandela </button>
+                   <button class = 'incorrect'> Jacob Zuma </button>
+                   <button class = 'incorrect'>Barack Obama</button>
+                   <button class = 'incorrect'>Robert Mugabe</button>
+                   <p id = message></p>
+
+                </form>
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>
+                    Which country has the high rate of Cow attacks per capita?
+                </h3>
+                <input type = 'text'>
+                <button id = 'p2Button'>Submit</button>
+                <p id = 'p2Message'></p>
+
+                <!-- TODO: Add free response question here -->
+            </div>
+        </div>
+        <div class="container">
+            <div class="section">
+                <h2>Part 3: Multiple Choice </h2>
+                <hr>
+                <h3>
+                    What is the fear of vegetables called?
+                </h3>
+                <form>
+                   <button id = 'right'> Lachanophobia </button>
+                   <button class = 'wrong'> Vegaphobia </button>
+                   <button class = 'wrong'>Fat man syndrome</button>
+                   <button class = 'wrong'>Regoboraphobia</button>
+                   <p id = p3message></p>
+
+                </form>
+
+            </div>
+
+            <div class="section">
+                <h2>Part 4:</h2>
+                <hr>
+                <h3>
+                    Which country has the highest rate of toe theft?
+                </h3>
+                <input id = n type = 'text'>
+                <button id = 'p4Button'>Submit</button>
+                <p id = 'p4Message'></p>
+
+                <!-- TODO: Add free response question here -->
+            </div>
+            <button onclick="myFunction()" >
+                Submit Answers
+            </button>
+            <script>
+                function myFunction() {
+                 location.replace("https://hobbo2-code50-79083123-4jgwx4x6qh7x95-8080.githubpreview.dev/template.html")
+                }
+            </script>
+        </div>
+
+        </div>
+    </div>
+</div>
+    </body>
+</html>
+
+
+
+
+
