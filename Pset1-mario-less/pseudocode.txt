@@ -1,0 +1,22 @@
+1. Prompt user for a number between 1 and 8
+If number >1 OR >8 then reprompt user for another input ( do while loop)
+if correct print:
+     "height":n
+     return n*rows and columns
+
+     Rows and columns will be in loop
+     print # as long as i smaller than n (loop)
+     add in new line so that i prints new lines (also loop inside of i loop)
+     move new line outside of loop so it prints n #s and then new line repeat
+
+     Currently returning a square:
+        : i goes from 0 to n so long as it is smaller than n
+        : j goes from 0 to i so long as it iis smaller than i plus 1 sp will print n #s
+        therefor j will print i per line and i counts from 0 up to n
+
+
+
+    returns left sided pyramid:
+        : another loop to space from right
+        :loop must have as many spaces as n-1
+        : so k = n-1 and repeats as long as it is greater than i (#)
