@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css" />
+<html>
+  <!-- Style-->
+  <style>
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .image {
+      flex-basis: 40%;
+    }
+    nav {
+      text-align: center;
+    }
+    body {
+      text-align: center;
+    }
+    div {
+      text-align: left;
+    }
+    .button {
+      border-radius: 2px;
+      background-color: #a39c9a;
+      border: none;
+      color: #0a0909;
+      text-align: center;
+      font-size: 15px;
+      padding: 10px;
+      width: 159px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+    }
+
+    .button span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+
+    .button span:after {
+      content: "\00bb";
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+
+    .button:hover span {
+      padding-right: 25px;
+    }
+
+    .button:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+    th,
+    td {
+      padding-top: 10px;
+      padding-bottom: 20px;
+      padding-left: 20px;
+      padding-right: 25px;
+    }
+  </style>
+  <!-- Navigation -->
+  <nav class="w3-bar w3-black">
+    <a href="#home" class="w3-button w3-bar-item">Youtube Downloader</a>
+  </nav>
+
+  <!-- Block space-->
+  <!--Heading-->
+  <title>Youtube Downloader</title>
+  <nav>
+    <img
+      src="https://pngimg.com/uploads/pirate/pirate_PNG88.png"
+      alt="pirate logo"
+      width="250"
+      height="250"
+    />
+
+    <br /><br />
+  </nav>
+
+  <nav>
+    <h1>
+      Click to download:
+      <br />
+    </h1>
+  </nav>
+  <body class="w3-bar w3-black">
+    <nav class="w3-bar w3-black">
+      <form action="/download" method="post">
+        <input
+          placeholder="{{title}}"
+          name="url"
+          type="url"
+          autocomplete="off"
+        />
+        <button name="download" class="button">
+          <span> <b>Download</b> </span>
+        </button>
+      </form>
+    </nav>
+  </body>
+  <main class="w3-bar w3-black">
+    <div class="container">
+      <div class="image">
+        <img
+          src="{{thumbnail}}"
+          alt="youtube thumbnail"
+          width="350"
+          height="300"
+        />
+      </div>
+      <table>
+        <tr>
+          <th>Video Title</th>
+          <th>Length</th>
+        </tr>
+        <tr>
+          <td>{{title}}</td>
+          <td>{{minutes}}m {{seconds}}s</td>
+        </tr>
+      </table>
+    </div>
+  </main>
+
+  <!-- HOW TO left aligned-->
+  <nav>
+    <h1>HOW TO USE</h1>
+    <p>
+      Copy URL into the space above. Click download and Enjoy!<br />
+      It is that simple.
+    </p>
+  </nav>
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+    <p class="w3-medium">
+      Powered by
+      <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
+        >w3.css</a
+      >
+    </p>
+  </footer>
+</html>
